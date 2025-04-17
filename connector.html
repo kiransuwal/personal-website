@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Startup Connector | Coming Soon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: #121212;
+            font-family: 'Poppins', sans-serif;
+            color: #e0e0e0;
+            text-align: center;
+            flex-direction: column;
+        }
+        .coming-soon {
+            max-width: 600px;
+            width: 90%;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        .coming-soon h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #0077ff;
+        }
+        .coming-soon p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+        }
+        .about-me {
+            font-size: 1em;
+            margin-top: 30px;
+            line-height: 1.6;
+            color: #cccccc;
+        }
+        .notify-form {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .notify-form input[type="email"] {
+            padding: 10px;
+            flex: 1 1 250px;
+            border: 1px solid #444;
+            border-radius: 8px;
+            background: #2a2a2a;
+            color: #eee;
+        }
+        .notify-form button {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            background: #0077ff;
+            color: white;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .notify-form button:hover {
+            background: #005fd1;
+        }
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+        @media (max-width: 480px) {
+            .coming-soon h1 {
+                font-size: 2em;
+            }
+            .coming-soon p {
+                font-size: 1em;
+            }
+            .notify-form button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="coming-soon">
+        <h1>Yuwa Lagani</h1>
+        <p>We're building a platform to connect bright ideas with investors in Nepal and beyond.<br>Be the first to know when we launch!</p>
+        <form class="notify-form" action="https://formspree.io/f/xyyvrzvo" method="POST" onsubmit="return confirm('Thanks! We will notify you when we launch.')">
+            <input type="email" name="email" placeholder="Your Email" required>
+            <button type="submit">Notify Me</button>
+        </form>
+
+        <div class="about-me">
+            <h2>About Me</h2>
+            <p>Hi, I’m Kiran Suwal — an entrepreneur passionate about building solutions that create lasting impact. I believe in the power of collaboration and the endless possibilities that spark when great minds meet. </p>
+            <p>With experience in idea incubation, startup mentorship, and connecting bright individuals with strategic investors, I’m always working toward fostering meaningful change in Nepal’s startup ecosystem. My goal is to empower ideas that solve real-world problems and drive innovation forward.</p>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2025 Startup Connector | Designed by Kiran Suwal
+    </footer>
+</body>
+</html>

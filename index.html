@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Kiran Suwal | Entrepreneur & Innovator</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #121212;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+        header {
+            background: #1e1e1e;
+            padding: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            text-align: center;
+            position:static;
+            top: 0;
+            z-index: 999;
+        }
+        .profile-image {
+            width: 200px;
+            height: 200px;
+            border-radius: 25%;
+            object-fit: cover;
+            border: 3px solid black;
+            margin-bottom: 15px;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2em;
+        }
+        header p {
+            margin: 5px 0 0;
+            font-size: 1em;
+            color: #aaa;
+        }
+        nav {
+            margin: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            text-decoration: none;
+            color: inherit;
+            margin: 0 15px;
+            font-weight: 500;
+            position: relative;
+            scroll-behavior: smooth;
+        }
+        nav a:after {
+            content: '';
+            display: block;
+            height: 2px;
+            width: 0;
+            background: #0077ff;
+            transition: width 0.3s;
+            margin: 4px auto 0;
+        }
+        nav a:hover:after {
+            width: 100%;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        section {
+            margin-bottom: 50px;
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.6s ease;
+        }
+        section.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .project {
+            background: #1e1e1e;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+        }
+        .project h3 {
+            margin: 0 0 10px;
+        }
+        .project a {
+            color: #0077ff;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+            color: #666;
+            background: #1e1e1e;
+            box-shadow: 0 -1px 5px rgba(0,0,0,0.05);
+        }
+        .contact-form {
+            background: #1e1e1e;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+            margin-top: 20px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: 1px solid #444;
+            border-radius: 8px;
+            box-sizing: border-box;
+            background: #2a2a2a;
+            color: #eee;
+        }
+        .contact-form button {
+            background: #0077ff;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            margin-top: 10px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+        .contact-form button:hover {
+            background: #005fd1;
+        }
+        .social-links {
+            margin-top: 10px;
+            text-align: center;
+        }
+        .social-links a {
+            display: inline-block;
+            margin: 0 8px;
+            text-decoration: none;
+            font-size: 1.2em;
+            color: inherit;
+            transition: transform 0.2s ease;
+        }
+        .social-links a:hover {
+            transform: translateY(-2px);
+        }
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8em;
+            }
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+            .container {
+                padding: 0 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <!-- Add your profile image in the "images" folder and update the src accordingly -->
+    <img src="images/kiran.jpg" alt="Kiran Suwal" class="profile-image">
+    <h1>Kiran Suwal</h1>
+    <p>Entrepreneur | Innovator | Connector</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<div class="container">
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Hi, I’m Kiran Suwal — an entrepreneur passionate about building solutions that create lasting impact. I believe in the power of collaboration and the endless possibilities that spark when great minds meet. </p>
+            <p>With experience in idea incubation, startup mentorship, and connecting bright individuals with strategic investors, I’m always working toward fostering meaningful change in Nepal’s startup ecosystem. My goal is to empower ideas that solve real-world problems and drive innovation forward.</p>
+    </section>
+
+    <section id="#projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>yuwalagani.com</h3>
+            <p>A platform designed to connect bright ideas with investors across Nepal and beyond. <a href="connector.html"> (COMING SOON..Click to see)</a>  </p>
+        </div>
+        
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <div class="contact-form">
+            <form action="https://formspree.io/f/xyyvrzvo" method="POST" onsubmit="return confirm('Thank you for your message! I will reply soon.')">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/kiran-suwal-9881b3360/" target="_blank">LinkedIn</a>
+            <a href="https://github.com/kiransuwal" target="_blank">GitHub</a>
+            <a href="https://facebook.com/suwalk" target="_blank">Facebook</a>
+        </div>
+    </section>
+
+</div>
+
+<footer>
+    &copy; Kiran Suwal — All rights reserved.
+</footer>
+
+<script>
+    const sections = document.querySelectorAll('section');
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if(entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.1 });
+    sections.forEach(section => observer.observe(section));
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
